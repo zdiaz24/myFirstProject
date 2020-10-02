@@ -1,0 +1,60 @@
+html {
+    background-image: url('../images/background.jpg');
+    margin: 0; 
+    padding: 0;
+    font-size: 15px;
+}
+body {
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(235, 191, 47);
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+/*navbar style*/
+nav {
+    width: 100%;
+    background-color: rgb(255, 102, 0);
+}
+/* Display links horizontally*/
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+/* Change to green on hover of nav links*/
+.nav-li a:hover {
+    background-color: white;
+    color: orangered;
+}
+/*Style of the text on nav links*/
+.nav-li a {
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-family:"Trebuchet MS", Helvetica, sans-serif ;   
+}
+/*highlight color of active page on nav bar*/
+a.active {
+    background-color: rgb(199, 65, 65);
+}
+.header-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.header-text-wrapper {
+    position: absolute;
+    overflow: hidden;
+    top: 1em;
+}
+.header-text {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif ;
+    color: rgb(199, 65, 65);
+    font-size: 3em;
+}
