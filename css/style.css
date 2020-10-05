@@ -1,16 +1,14 @@
 html {
     background-image: url('../images/background.jpg');
-    margin: 0; 
-    padding: 0;
     font-size: 15px;
 }
 body {
     margin: auto;
-    width: 70%;
+    max-width:70%;
     height: 100%;
     background-color: rgb(235, 191, 47);
 }
-header {
+header { 
     display: flex;
     flex-direction: column;
 }
@@ -42,12 +40,15 @@ nav {
 a.active {
     background-color: rgb(199, 65, 65);
 }
-.header-img {
-    width: 100%;
-    height: auto;
+.header-img-wrapper {
     margin: 0;
     padding: 0;
 }
+.header-img {
+    width: 100%;
+    height: auto;
+}
+/*position header text on top of header image*/
 .header-text-wrapper {
     position: absolute;
     overflow: hidden;
@@ -58,3 +59,19 @@ a.active {
     color: rgb(199, 65, 65);
     font-size: 3em;
 }
+ /* Content on the home page should be a grid*/
+.home-main-content {
+    display: grid;
+    grid-template-columns: 1;
+}
+/* Styles for the search box*/
+.find-pet-wrapper {
+    grid-column: 1;
+    grid-row: 1;
+}
+/* Position the input fields inside the search box*/
+.pet-search-module {
+    margin: 0;
+}
+
+/* Style each input field and button*/
