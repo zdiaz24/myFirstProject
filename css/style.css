@@ -34,7 +34,7 @@ nav {
     font-size: 1em;
     color: white;
     text-decoration: none;
-    font-family:"Trebuchet MS", Helvetica, sans-serif ;   
+    font-family:"Trebuchet MS";   
 }
 /*highlight color of active page on nav bar*/
 a.active {
@@ -48,40 +48,34 @@ a.active {
     width: 100%;
     height: auto;
 }
-/*position header text on top of header image*/
-.header-text-wrapper {
-    position: absolute;
-    overflow: hidden;
-    top: 1em;
-}
-.header-text {
-    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif ;
-    color: rgb(199, 65, 65);
-    font-size: 3em;
-}
- /* Content on the home page should be a grid*/
+/* Content on the home page should be a grid*/
 .home-main-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-flow: column;
+   
 }
-/* Styles for the search box*/
-.find-pet-wrapper {
-    grid-column: 1;
-    grid-row: 1;
-}
-
-h1 {
-    background-color: wheat;
+/*Style the text for the search box*/
+.search-module-text{
     margin: 0;
     padding: 0;
-    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif ;
-    text-align: center;
+    font-family:"Lucida Sans Unicode";
+    color: rgb(199, 65, 65);
+    font-size: 3em;
 }
 /* Position the input fields inside the search box*/
 .pet-search-module {
     background-color: wheat;
     margin: 0;
-    padding: 2%;
+    padding: 1%;
+    display: grid;
+    justify-content: center;
+}
+input, .search-module-button {
+    text-align: center;
+}
+
+/* Adoptable pets pictures*/
+.adoptable-pets-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
