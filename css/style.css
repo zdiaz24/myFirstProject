@@ -1,3 +1,8 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
 html {
     background-image: url('../images/background.jpg');
     font-size: 15px;
@@ -40,10 +45,6 @@ nav {
 a.active {
     background-color: rgb(199, 65, 65);
 }
-.header-img-wrapper {
-    margin: 0;
-    padding: 0;
-}
 .header-img {
     width: 100%;
     height: auto;
@@ -70,12 +71,9 @@ a.active {
     display: grid;
     justify-content: center;
 }
-input, .search-module-button {
-    text-align: center;
-}
-
 /* Adoptable pets pictures*/
 .adoptable-pets-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
