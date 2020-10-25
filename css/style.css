@@ -73,7 +73,12 @@ a.active {
 }
 /* Adoptable pets pictures*/
 .adoptable-pets-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+}
+.pet-desc-img {
+    width: 200px;
+    height: 200px;
+}
+.pet-desc-box {
+    border-style: solid;
 }
