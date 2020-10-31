@@ -81,4 +81,6 @@ a.active {
 }
 .pet-desc-box {
     border-style: solid;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
 }
